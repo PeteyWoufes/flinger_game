@@ -35,3 +35,12 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.meta
+*.physicsMaterial2D
+*.prefab
+*.png
+*.controller
+*.anim
+*.asset
+*.unity
+Packages/manifest.json
