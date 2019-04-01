@@ -5,14 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class mainMenu_UI : MonoBehaviour {
 
+    // Declarations
+    public string first_level;
+    public string tutorial_level;
+
 	public void Play ()
 	{
-		SceneManager.LoadScene("B1_L1");
+		SceneManager.LoadScene(first_level);
 	}
 
 	public void HowToPlay ()
 	{
-		SceneManager.LoadScene("tutorial");
+		SceneManager.LoadScene(tutorial_level);
 	}
 
 }

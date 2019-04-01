@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class pressure_pad : MonoBehaviour
 {
-    public bool activated;
+    // Components
     private Animator anim;
+
+    // Declarations
+    public bool activated;
+
     void Start()
     {
         activated = false;
         anim = GetComponent<Animator>();
     }
 
-    void Update()
+    void anim_check()
     {
-        anim_check();
+        anim.SetBool("activated", activated);
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -24,9 +28,9 @@ public class pressure_pad : MonoBehaviour
             activated = true;
         }
     }
-
-    void anim_check()
+    
+    void Update()
     {
-        anim.SetBool("activated", activated);
+        anim_check();
     }
 }

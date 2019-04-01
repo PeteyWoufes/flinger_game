@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class slingshot : MonoBehaviour
 {
-	public bool occupied = true;
+	// Declarations
+    public bool occupied = true;
 	public bool targeting;
+
+    // Components
     public GameObject player_prefab;
 	public Transform spawn_pos;
 
@@ -18,7 +21,7 @@ public class slingshot : MonoBehaviour
     {
         if (!occupied && !sceneMoving())
 		{
-			spawn_next();
+            spawn_next();
 		}
     }
 

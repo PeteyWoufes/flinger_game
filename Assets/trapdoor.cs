@@ -4,16 +4,8 @@ using UnityEngine;
 
 public class trapdoor : MonoBehaviour
 {
-	public pressure_pad PRESSURE_PAD;
-    void Start()
-    {
-		
-    }
-
-    void Update()
-    {
-        open_check();
-    }
+	// Components
+    public pressure_pad PRESSURE_PAD;
 
 	void open_check()
 	{
@@ -22,4 +14,9 @@ public class trapdoor : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
+
+    void Update()
+    {
+        open_check();
+    }
 }

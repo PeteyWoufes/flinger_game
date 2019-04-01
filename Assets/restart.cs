@@ -16,6 +16,7 @@ public class restart : MonoBehaviour
 	{
 		SceneManager.LoadScene("mainMenu");
 	}
+    
 	void restartCheck ()
 	{
 		if (Input.GetKeyDown(KeyCode.R))

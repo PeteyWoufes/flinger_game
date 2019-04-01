@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class tutorial_UI : MonoBehaviour {
 	
-	public void Exit ()
+	public void exit_tutorial ()
 	{
 		SceneManager.LoadScene("mainMenu");
 	}
