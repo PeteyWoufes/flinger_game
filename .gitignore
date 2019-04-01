@@ -44,3 +44,5 @@ sysinfo.txt
 *.asset
 *.unity
 Packages/manifest.json
+bld.zip
+Logs/Packages-Update.log

@@ -10,13 +10,13 @@ public class camera_follow : MonoBehaviour {
 	public float zoom_level;
 	void Start () 
 	{
-		transform.position = new Vector3(player.transform.position.x - camera_offset, transform.position.y, transform.position.z);
+		transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
 		player_camera = GetComponent<Camera>();
 		player = GameObject.FindGameObjectWithTag("Player");
 	}
 	void follow ()
 	{
-		transform.position = new Vector3(player.transform.position.x - camera_offset, transform.position.y, transform.position.z);
+		transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
 	}
 
 	void zoom ()
@@ -38,6 +38,7 @@ public class camera_follow : MonoBehaviour {
 	
 	void Update () 
 	{
+		player = GameObject.FindGameObjectWithTag("Player");
 		track_and_zoom();
 	}
 }
