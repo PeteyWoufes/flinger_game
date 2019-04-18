@@ -5,7 +5,7 @@ using UnityEngine;
 public class slingshot : MonoBehaviour
 {
 	// Declarations
-    public bool occupied = true;
+    public bool occupied;
 	public bool targeting;
 
     // Components
@@ -14,7 +14,7 @@ public class slingshot : MonoBehaviour
 
 	void Start ()
 	{
-		occupied = true;
+        spawn_next();
 	}
 
     void FixedUpdate()
